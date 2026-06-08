@@ -1,26 +1,24 @@
 # 🏗️ Terraform-Google-Storage
 
-[![OpsStation](https://img.shields.io/badge/Made%20by-OpsStation-blue?style=flat-square&logo=terraform)](https://www.opsstation.com)
+[![vikas](https://img.shields.io/badge/Made%20by-vikas-blue?style=flat-square&logo=terraform)]
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Terraform](https://img.shields.io/badge/Terraform-1.13%2B-purple.svg?logo=terraform)](#)
-[![CI](https://github.com/OpsStation/terraform-multicloud-labels/actions/workflows/ci.yml/badge.svg)](https://github.com/OpsStation/terraform-multicloud-labels/actions/workflows/ci.yml)
-[![Latest Release](https://img.shields.io/github/release/opsstation/terraform-gcp-storage.svg)](https://github.com/opsstation/terraform-gcp-storage/releases/latest)
+[![CI](https://github.com/chahalvikas2022/terraform-multicloud-labels/actions/workflows/ci.yml/badge.svg)](https://github.com/chahalvikas2022/terraform-multicloud-labels/actions/workflows/ci.yml)
+[![Latest Release](https://img.shields.io/github/release/chahalvikas2022/terraform-gcp-storage.svg)](https://github.com/chahalvikas2022/terraform-gcp-storage/releases/latest)
 
-> 🌩️ **A production-grade, reusable GCP Storage module by [OpsStation](https://www.opsstation.com)**
+> 🌩️ **A production-grade, reusable GCP Storage module by [vikas]**
 > Designed for **reliability**, **security**, and **performance** — following Google Cloud best practices.
 
 ---
 
-## 🏢 About OpsStation
+## 🏢 About Vikas
 
-**OpsStation** delivers **Cloud & DevOps excellence** for modern teams:
+**Vikas** delivers **Cloud & DevOps excellence** for modern teams:
 - 🚀 **Infrastructure Automation** with Terraform, Ansible & Kubernetes
 - 💰 **Cost Optimization** via scaling & right-sizing
 - 🛡️ **Security & Compliance** baked into CI/CD pipelines
 - ⚙️ **Fully Managed Operations** across GCP, Azure, and AWS
 
-> 💡 Need enterprise-grade DevOps automation?
-> 👉 Visit [**www.opsstation.com**](https://www.opsstation.com) or email **hello@opsstation.com**
 
 ---
 
@@ -33,7 +31,7 @@
 ✅ Supports **Custom Placement Configs** for multi-region redundancy  
 ✅ Optional **HMAC key generation** for programmatic access  
 ✅ Enables **CORS**, **website hosting**, and **retention policies**  
-✅ Integrated with [OpsStation Multicloud Labels](https://registry.terraform.io/modules/opsstation/labels/multicloud/latest)  
+✅ Integrated with [Chahalvikas2022 Multicloud Labels](https://registry.terraform.io/modules/chahalvikas2022/labels/multicloud/latest)  
 ✅ Modular and reusable for multiple environments (dev, stage, prod)
 
 ---
@@ -44,8 +42,7 @@
 
 ```hcl
 module "bucket" {
-  source      = "opsstation/storage/gcp"
-  version     = "1.0.1"
+  source      = "https://github.com/chahalvikas2022/terraform-gcp-storage.git"
   name        = "bucket"
   environment = "test"
   location    = "us"
@@ -79,8 +76,7 @@ module "bucket" {
 
 ```hcl
 module "bucket" {
-  source      = "opsstation/storage/gcp"
-  version     = "1.0.1"
+  source      = "https://github.com/chahalvikas2022/terraform-gcp-storage.git"
   name        = "bucket-encryption"
   environment = "test"
   location    = "US"
@@ -179,4 +175,4 @@ module "bucket" {
 
 ## 🧑‍💻 Maintainers
 
-This module is maintained by [OpsStation](https://www.opsstation.com).
+This module is maintained by [Vikas].
